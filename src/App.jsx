@@ -64,8 +64,14 @@ function App() {
       background: theme === "light"
         ? "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
         : "linear-gradient(135deg, #00d2ff 0%, #3a47d5 100%)",
+      // Ensure gradient text works across browsers (WebKit + standard)
       WebkitBackgroundClip: "text",
-      WebkitTextFillColor: "transparent",
+      // Use transparent fill when using the gradient (light theme). In dark mode provide a readable fallback color.
+      WebkitTextFillColor: theme === "light" ? "transparent" : "#e2e8f0",
+      backgroundClip: "text",
+      color: theme === "light" ? "transparent" : "#e2e8f0",
+      // Add a subtle shadow in dark mode so single-color text stands out on patterned backgrounds
+      textShadow: theme === "light" ? "none" : "0 1px 0 rgba(0,0,0,0.35)",
       display: "inline-block"
     },
     subtitle: {
@@ -200,7 +206,8 @@ function App() {
         
         <div style={styles.wrapper}>
           <header style={styles.header}>
-            <h1 style={styles.title}>📓 Daily Journal</h1>
+          {/* force remount when theme changes so gradient/text-fill re-applies */}
+          <h1 key={theme} style={styles.title}>📓 Daily Journal</h1>
             <p style={styles.subtitle}>Your thoughts, beautifully preserved</p>
           </header>
 
