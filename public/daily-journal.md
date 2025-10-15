@@ -6,3 +6,5 @@
 2025-10-11 - change the interface and add more features
 2025-10-12 - update github readme file
 2025-10-14 - Strat recat frontend
+2025-10-15 - Create first page
+2025-10-15 - fix bug first page
