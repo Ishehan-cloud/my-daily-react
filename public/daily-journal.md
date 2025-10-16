@@ -10,3 +10,4 @@
 2025-10-15 - fix bug first page
 2025-10-16 - Create second page
 2025-10-16 - fix bug first page
+2025-10-16 - fix bug second page
