@@ -13,3 +13,4 @@
 2025-10-16 - fix bug second page
 2025-10-16 - update UI
 2025-10-17 – Improved overall UI and color theme
+2025-10-17 – Added navigation bar and footer components
