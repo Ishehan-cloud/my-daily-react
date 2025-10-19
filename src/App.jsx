@@ -61,18 +61,34 @@ function App() {
       fontWeight: "300",
       letterSpacing: "-0.02em",
       marginBottom: "10px",
+      // We'll apply the gradient to the main text only; emoji gets a solid color
+      display: "inline-flex",
+      alignItems: "baseline",
+      gap: "10px"
+    },
+    titleEmoji: {
+      // Make emoji align with the text baseline and match line-height
+      fontSize: "2.6rem",
+      verticalAlign: "baseline",
+      lineHeight: 1,
+      // Solid color that contrasts in both themes
+      color: theme === "light" ? "#3b82f6" : "#7dd3fc"
+    },
+    titleText: {
+      fontSize: "3rem",
+      fontWeight: "300",
+      letterSpacing: "-0.02em",
+      marginBottom: "10px",
       background: theme === "light"
         ? "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
         : "linear-gradient(135deg, #00d2ff 0%, #3a47d5 100%)",
-      // Ensure gradient text works across browsers (WebKit + standard)
       WebkitBackgroundClip: "text",
-      // Use transparent fill when using the gradient (light theme). In dark mode provide a readable fallback color.
       WebkitTextFillColor: theme === "light" ? "transparent" : "#e2e8f0",
       backgroundClip: "text",
       color: theme === "light" ? "transparent" : "#e2e8f0",
-      // Add a subtle shadow in dark mode so single-color text stands out on patterned backgrounds
       textShadow: theme === "light" ? "none" : "0 1px 0 rgba(0,0,0,0.35)",
-      display: "inline-block"
+      display: "inline-block",
+      lineHeight: 1
     },
     subtitle: {
       fontSize: "1.1rem",
@@ -229,7 +245,10 @@ function App() {
         <div style={styles.wrapper}>
           <header style={styles.header}>
           {/* force remount when theme changes so gradient/text-fill re-applies */}
-          <h1 key={theme} style={styles.title}>📓 Daily Journal</h1>
+          <h1 key={theme} style={styles.title}>
+            <span style={styles.titleEmoji}>📓</span>
+            <span style={styles.titleText}>Daily Journal</span>
+          </h1>
             <p style={styles.subtitle}>Your thoughts, beautifully preserved</p>
           </header>
 
