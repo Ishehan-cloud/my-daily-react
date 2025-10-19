@@ -17,3 +17,4 @@
 2025-10-18 – fix bug and erorrs
 2025-10-19 - Integrate API for dynamic data  
 2025-10-19 - Handle loading and error states 
+2025-10-19 - Improve UI with new components  
