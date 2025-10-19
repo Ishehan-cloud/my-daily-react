@@ -155,6 +155,28 @@ function App() {
     }
   };
 
+  // Helper to render journal text with date highlights
+  function renderJournal(text, themeMode) {
+    const lines = text.split(/\r?\n/).filter(Boolean);
+    return lines.map((line, idx) => {
+      // Match ISO-like date at start (e.g., 2025-10-10) or with spaces
+      const match = line.match(/^(\s*)(\d{4}-\d{2}-\d{2})(\s*-?\s*)(.*)$/);
+      if (match) {
+        const [, leading, date, sep, rest] = match;
+        const dateColor = themeMode === 'light' ? '#2b6cb0' : '#90cdf4';
+        return (
+          <div key={idx} style={{ marginBottom: '8px' }}>
+            <span style={{ color: dateColor, fontWeight: 600 }}>{leading}{date}</span>
+            <span style={{ color: themeMode === 'light' ? '#4a5568' : '#cbd5e0' }}>{sep}{rest}</span>
+          </div>
+        );
+      }
+      return (
+        <div key={idx} style={{ marginBottom: '8px', color: themeMode === 'light' ? '#4a5568' : '#cbd5e0' }}>{line}</div>
+      );
+    });
+  }
+
   const keyframes = `
     @keyframes fadeInDown {
       from {
@@ -242,7 +264,9 @@ function App() {
             {isLoading ? (
               <div style={styles.loader}>✨ Loading your journal...</div>
             ) : (
-              <pre style={styles.journalContent}>{journal}</pre>
+              <div style={styles.journalContent}>
+                {renderJournal(journal, theme)}
+              </div>
             )}
           </div>
 
