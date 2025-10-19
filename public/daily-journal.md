@@ -15,3 +15,4 @@
 2025-10-17 – Improved overall UI and color theme
 2025-10-17 – Added navigation bar and footer components
 2025-10-18 – fix bug and erorrs
+2025-10-19 - Integrate API for dynamic data  
