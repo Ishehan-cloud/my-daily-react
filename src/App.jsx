@@ -37,8 +37,8 @@ function App() {
     container: {
       minHeight: "100vh",
       background: theme === "light" 
-        ? "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)" 
-        : "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)",
+        ? "linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%)" 
+        : "linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)",
       color: theme === "light" ? "#2d3748" : "#e2e8f0",
       transition: "all 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
       position: "relative",
@@ -58,42 +58,37 @@ function App() {
     },
     title: {
       fontSize: "3rem",
-      fontWeight: "300",
+      fontWeight: "600",
       letterSpacing: "-0.02em",
-      marginBottom: "10px",
-      // We'll apply the gradient to the main text only; emoji gets a solid color
+      marginBottom: "15px",
       display: "inline-flex",
       alignItems: "baseline",
-      gap: "10px"
+      gap: "15px",
+      color: theme === "light" ? "#4a5568" : "#e2e8f0",
+      textShadow: theme === "light" 
+        ? "0 2px 10px rgba(0, 0, 0, 0.05)" 
+        : "0 4px 20px rgba(255, 255, 255, 0.2)"
     },
     titleEmoji: {
-      // Make emoji align with the text baseline and match line-height
-      fontSize: "2.6rem",
+      fontSize: "3rem",
       verticalAlign: "baseline",
       lineHeight: 1,
-      // Solid color that contrasts in both themes
-      color: theme === "light" ? "#3b82f6" : "#7dd3fc"
+      filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.2))"
     },
     titleText: {
       fontSize: "3rem",
-      fontWeight: "300",
+      fontWeight: "600",
       letterSpacing: "-0.02em",
-      marginBottom: "10px",
-      background: theme === "light"
-        ? "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
-        : "linear-gradient(135deg, #00d2ff 0%, #3a47d5 100%)",
-      WebkitBackgroundClip: "text",
-      WebkitTextFillColor: theme === "light" ? "transparent" : "#e2e8f0",
-      backgroundClip: "text",
-      color: theme === "light" ? "transparent" : "#e2e8f0",
-      textShadow: theme === "light" ? "none" : "0 1px 0 rgba(0,0,0,0.35)",
+      marginBottom: "15px",
+      color: theme === "light" ? "#4a5568" : "#fff",
       display: "inline-block",
       lineHeight: 1
     },
     subtitle: {
       fontSize: "1.1rem",
       opacity: 0.7,
-      fontStyle: "italic"
+      fontStyle: "italic",
+      color: theme === "light" ? "#5a5a5a" : "#cbd5e0"
     },
     controls: {
       display: "flex",
@@ -103,11 +98,11 @@ function App() {
       flexWrap: "wrap"
     },
     button: {
-      padding: "10px 20px",
+      padding: "12px 24px",
       border: "none",
-      borderRadius: "25px",
+      borderRadius: "12px",
       background: theme === "light"
-        ? "rgba(255, 255, 255, 0.9)"
+        ? "#ffffff"
         : "rgba(255, 255, 255, 0.1)",
       color: theme === "light" ? "#4a5568" : "#e2e8f0",
       cursor: "pointer",
@@ -116,25 +111,25 @@ function App() {
       fontWeight: "500",
       backdropFilter: "blur(10px)",
       boxShadow: theme === "light"
-        ? "0 4px 15px rgba(0, 0, 0, 0.1)"
+        ? "0 2px 8px rgba(0, 0, 0, 0.08)"
         : "0 4px 15px rgba(255, 255, 255, 0.1)",
       display: "flex",
       alignItems: "center",
-      gap: "5px"
+      gap: "8px"
     },
     journalContainer: {
       background: theme === "light"
-        ? "rgba(255, 255, 255, 0.95)"
-        : "rgba(255, 255, 255, 0.05)",
+        ? "#ffffff"
+        : "rgba(255, 255, 255, 0.08)",
       borderRadius: "20px",
-      padding: "30px",
+      padding: "40px",
       boxShadow: theme === "light"
-        ? "0 15px 35px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07)"
-        : "0 15px 35px rgba(0, 0, 0, 0.3), 0 5px 15px rgba(255, 255, 255, 0.1)",
-      backdropFilter: "blur(10px)",
+        ? "0 4px 20px rgba(0, 0, 0, 0.08)"
+        : "0 20px 60px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
+      backdropFilter: theme === "light" ? "none" : "blur(20px)",
       border: theme === "light"
-        ? "1px solid rgba(255, 255, 255, 0.8)"
-        : "1px solid rgba(255, 255, 255, 0.1)",
+        ? "1px solid rgba(0, 0, 0, 0.05)"
+        : "2px solid rgba(255, 255, 255, 0.15)",
       animation: "fadeInUp 0.8s ease-out 0.2s both",
       position: "relative",
       overflow: "hidden"
@@ -164,22 +159,21 @@ function App() {
       position: "absolute",
       borderRadius: "50%",
       background: theme === "light"
-        ? "radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%)"
-        : "radial-gradient(circle, rgba(0, 210, 255, 0.1) 0%, transparent 70%)",
+        ? "radial-gradient(circle, rgba(226, 209, 195, 0.3) 0%, transparent 70%)"
+        : "radial-gradient(circle, rgba(0, 245, 255, 0.15) 0%, transparent 70%)",
       animation: "float 20s ease-in-out infinite",
-      pointerEvents: "none"
+      pointerEvents: "none",
+      filter: "blur(40px)"
     }
   };
 
   // Helper to render journal text with date highlights
   function renderJournal(text, themeMode) {
     const lines = text.split(/\r?\n/).filter(Boolean);
-    // Define colors for dates and entries so it's easy to tweak
-    const dateColor = themeMode === 'light' ? '#6b21a8' : '#93c5fd'; // purple-ish for dates
-    const entryColor = themeMode === 'light' ? '#0f766e' : '#a7f3d0'; // teal-ish for entry text
+    const dateColor = themeMode === 'light' ? '#8b5a3c' : '#a78bfa';
+    const entryColor = themeMode === 'light' ? '#4a5568' : '#e2e8f0';
 
     return lines.map((line, idx) => {
-      // Match ISO-like date at start (e.g., 2025-10-10) or with spaces
       const match = line.match(/^(\s*)(\d{4}-\d{2}-\d{2})(\s*-?\s*)(.*)$/);
       if (match) {
         const [, leading, date, sep, rest] = match;
@@ -235,6 +229,12 @@ function App() {
       50% { transform: translate(-100px, -200px) scale(0.9); }
       75% { transform: translate(-50px, -50px) scale(1.05); }
     }
+    
+    @keyframes shimmer {
+      0% { background-position: 0% center; }
+      50% { background-position: 100% center; }
+      100% { background-position: 0% center; }
+    }
   `;
 
   return (
@@ -242,16 +242,16 @@ function App() {
       <style>{keyframes}</style>
       <div style={styles.container}>
         {/* Decorative background elements */}
-        <div style={{...styles.decorativeCircle, width: "500px", height: "500px", top: "-250px", right: "-250px"}} />
-        <div style={{...styles.decorativeCircle, width: "300px", height: "300px", bottom: "-150px", left: "-150px", animationDelay: "10s"}} />
+        <div style={{...styles.decorativeCircle, width: "600px", height: "600px", top: "-300px", right: "-300px"}} />
+        <div style={{...styles.decorativeCircle, width: "400px", height: "400px", bottom: "-200px", left: "-200px", animationDelay: "10s"}} />
+        <div style={{...styles.decorativeCircle, width: "350px", height: "350px", top: "50%", left: "50%", transform: "translate(-50%, -50%)", animationDelay: "5s"}} />
         
         <div style={styles.wrapper}>
           <header style={styles.header}>
-          {/* force remount when theme changes so gradient/text-fill re-applies */}
-          <h1 key={theme} style={styles.title}>
-            <span style={styles.titleEmoji}>📓</span>
-            <span style={styles.titleText}>Daily Journal</span>
-          </h1>
+            <h1 key={theme} style={styles.title}>
+              <span style={styles.titleEmoji}>📓</span>
+              <span style={styles.titleText}>Daily Journal</span>
+            </h1>
             <p style={styles.subtitle}>Your thoughts, beautifully preserved</p>
           </header>
 
