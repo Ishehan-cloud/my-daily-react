@@ -23,4 +23,4 @@
 2025-10-20 - Add user authentication  
 2025-10-21 - Chnage topic color 
 2025-10-22 - Chnage the UI and make user friendly
-
+2025-10-23 - Fix authentication bugs 
