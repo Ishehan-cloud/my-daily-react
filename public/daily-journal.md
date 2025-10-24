@@ -24,3 +24,4 @@
 2025-10-21 - Chnage topic color 
 2025-10-22 - Chnage the UI and make user friendly
 2025-10-23 - Fix authentication bugs 
+2025-10-24 - Add animations and transitions  
