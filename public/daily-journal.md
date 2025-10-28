@@ -28,3 +28,4 @@
 2025-10-28 - Connect database for real-time updates  
 2025-10-28 - Secure API routes with JWT authentication  
 2025-10-28 - Final bug fixes and UI polishing
+2025-10-28 - Add dark/light mode toggle  
