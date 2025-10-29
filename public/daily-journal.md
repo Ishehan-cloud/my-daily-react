@@ -30,4 +30,5 @@
 2025-10-28 - Final bug fixes and UI polishing
 2025-10-28 - Add dark/light mode toggle  
 2025-10-29 - Create admin dashboard  
-2025-10-39 - Add chart and analytics components  
+2025-10-29 - Add chart and analytics components  
+2025-10-29 - Add user role management (admin/user)  
