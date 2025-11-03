@@ -41,4 +41,5 @@
 2025-11-02 - Add testing with Jest/React Testing Library
 2025-11-02 - Fix all console warnings and minor UI bugs
 2025-11-03 - Improve testing coverage and fix test failures
+2025-11-03 - Implement role-based access in frontend routes
 
