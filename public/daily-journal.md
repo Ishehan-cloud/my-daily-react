@@ -54,7 +54,7 @@
 2025-11-07 - Fix bugs and erorrs
 2025-11-08 - Create user profile editing page
 2025-11-08 - change profile page
-2025-12-11 - Add two-factor authentication (2FA)
-2025-12-11 - Implement SMS and email OTP verification
-2025-11-11 - Implement data caching with React Query
-2025-11-11 - Add infinite scroll for content lists
+2025-12-10- Add two-factor authentication (2FA)git status
+2025-12-10 - Implement SMS and email OTP verification
+2025-11-10 - Implement data caching with React Query
+2025-11-10 - Add infinite scroll for content lists
