@@ -55,3 +55,4 @@
 2025-11-08 - Create user profile editing page
 2025-11-08 - change profile page
 2025-12-11 - Add two-factor authentication (2FA)
+2025-12-11 - Implement SMS and email OTP verification
