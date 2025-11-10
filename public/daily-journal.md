@@ -57,3 +57,4 @@
 2025-12-11 - Add two-factor authentication (2FA)
 2025-12-11 - Implement SMS and email OTP verification
 2025-11-11 - Implement data caching with React Query
+2025-11-11 - Add infinite scroll for content lists
