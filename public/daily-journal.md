@@ -62,3 +62,4 @@
 2025-11-12 - Create modal components for forms
 2025-11-12 - Add confirmation dialogs for delete actions
 2025-11-13 - fix bus
+2025-11-17 - Add online/offline status indicators
