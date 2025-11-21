@@ -71,4 +71,5 @@
 2025-11-20 - Add interactive graphs and metrics
 2025-11-20 - Create notification preferences page
 2025-11-20 - Add email notification templates
+2025-11-21 - Implement rate limiting on API calls
 
