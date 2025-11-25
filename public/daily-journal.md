@@ -81,5 +81,6 @@
 2025-11-25 - Implement offline mode functionality
 2025-11-25 - Optimize bundle size with code splitting
 2025-11-25 - Create sitemap and robots.txt
+2025-11-26 - Create onboarding tutorial for new users
 
 
