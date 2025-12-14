@@ -115,3 +115,4 @@
 2025-12-12 - Create data export scheduler for reports
 2025-12-12 - Add automated email reports feature
 2025-12-13 - Implement version control for API
+2025-12-13 - Add API versioning middleware
