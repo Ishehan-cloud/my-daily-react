@@ -122,3 +122,4 @@
 2025-12-15 - Add map integration with markers
 2026-01-16 - Implement GDPR compliance features
 2026-01-16 - Add cookie consent banner
+2026-01-17 - Create data privacy settings page
