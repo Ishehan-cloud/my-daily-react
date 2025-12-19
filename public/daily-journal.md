@@ -125,3 +125,4 @@
 2025-12-17 - Create data privacy settings 
 2025-12-17 - Add data deletion request handling
 2025-12-18 - Bug Fix
+2025-12-18 - create new UI
