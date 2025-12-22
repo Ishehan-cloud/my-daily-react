@@ -126,3 +126,4 @@
 2025-12-17 - Add data deletion request handling
 2025-12-18 - Bug Fix
 2025-12-18 - create new UI
+2025-12-22 - Prepare for production deployment
