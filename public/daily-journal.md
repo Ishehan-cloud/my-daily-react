@@ -129,3 +129,4 @@
 2025-12-21 - Add search suggestions and autocomplete
 2025-12-22 - Prepare for production deployment
 2025-12-22 - Create bookmark/favorites feature
+2025-12-22 - Add save for later functionality
