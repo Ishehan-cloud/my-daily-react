@@ -127,3 +127,4 @@
 2025-12-18 - Bug Fix
 2025-12-18 - create new UI
 2025-12-22 - Prepare for production deployment
+2025-12-22 - Create bookmark/favorites feature
