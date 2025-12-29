@@ -138,3 +138,4 @@
 2025-12-26 - Add referral tracking functionality
 2025-12-27 - Add Stripe/PayPal payment processing
 2025-12-28 - Create subscription management system
+2025-12-28 - Add billing and invoice generation
