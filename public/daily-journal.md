@@ -146,3 +146,5 @@
 2025-12-31 - Fix Bugs
 2026-01-01 - Create API rate limiting dashboard
 2026-01-01 - Add usage statistics and quotas
+2026-01-02 - Add new home page
+
