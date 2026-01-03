@@ -148,5 +148,5 @@
 2026-01-01 - Add usage statistics and quotas
 2026-01-02 - Add new home page
 2026-01-03 - Bugs fix
-
-
+2025-01-03 - Add dark/light mode toggle 2
+2025-01-03 - A notification and alert system was implemented.
