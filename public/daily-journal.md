@@ -150,3 +150,4 @@
 2026-01-03 - Bugs fix
 2025-01-03 - Add dark/light mode toggle 2
 2025-01-03 - A notification and alert system was implemented.
+2025-12-30 - An admin reporting dashboard was created 
