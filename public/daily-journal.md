@@ -152,3 +152,4 @@
 2025-01-03 - A notification and alert system was implemented.
 2025-12-30 - An admin reporting dashboard was created 
 2026-01-04 - Implement push notifications
+2026-01-04 - Add notification permission handling
