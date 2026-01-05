@@ -153,3 +153,4 @@
 2025-12-30 - An admin reporting dashboard was created 
 2026-01-04 - Implement push notifications
 2026-01-04 - Add notification permission handling
+2026-01-05 - Create dark mod
