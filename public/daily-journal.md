@@ -155,3 +155,5 @@
 2026-01-04 - Add notification permission handling
 2026-01-05 - Create dark mod
 2026-01-09 - Refactored components for better reusability
+2026-01-09 - Added form validation with error messages
+
