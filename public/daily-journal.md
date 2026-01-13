@@ -159,6 +159,7 @@
 2026-01-11 - Bug fix
 2026-01-11 - Added export data functionality (CSV/PDF)
 2026-01-13 - Implemented drag and drop functionality
-2026-01-13 - Implemented drag and drop functionality
+2026-01-13 - Added keyboard shortcuts for navigation
+
 
 
