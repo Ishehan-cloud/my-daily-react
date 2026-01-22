@@ -172,6 +172,8 @@
 2026-01-20 - Created notification preferences page
 2026-01-20 - Added email notification templates
 2026-01-21 - bug fix
+2026-01-21 - Implemented rate limiting on API calls
+
 
 
 
