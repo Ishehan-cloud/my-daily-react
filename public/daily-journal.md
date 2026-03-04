@@ -230,6 +230,7 @@
 2026-03-01 - Add analytics event tracking
 2026-03-03 - Bug fix
 2026-03-04 - Create backup and restore functionality
+2026-03-04 - Add data migration scripts
 
 
 
