@@ -277,6 +277,7 @@
 2026-04-08 - Add QR code scanning support
 2026-04-08 - Bug fix
 2026-04-12 - Implement screen recording feature for tutorials
+2026-04-12 - Add user guide video generator
 
 
 
